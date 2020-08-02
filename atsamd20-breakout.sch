@@ -335,17 +335,17 @@ PA11
 Text Label 4350 2850 0    50   ~ 0
 PA10
 Text Label 4350 2750 0    50   ~ 0
-PA9
+PA09
 Text Label 4350 2650 0    50   ~ 0
-PA8
+PA08
 Text Label 4350 2550 0    50   ~ 0
-PA7
+PA07
 Text Label 4350 2450 0    50   ~ 0
-PA6
+PA06
 Text Label 4350 2350 0    50   ~ 0
-PA5
+PA05
 Text Label 4350 2250 0    50   ~ 0
-PA4
+PA04
 Text Label 4350 2150 0    50   ~ 0
 PA03
 Wire Wire Line
