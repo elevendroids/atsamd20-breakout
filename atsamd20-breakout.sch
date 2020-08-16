@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "ATSAMD20 Breakout Board"
-Date "2020-08-03"
+Title "ATSAMD2x Breakout Board"
+Date "2020-08-16"
 Rev "A"
-Comp "Michal Potrzebicz"
-Comment1 ""
+Comp ""
+Comment1 "Universal breakout board for ATSAMD2x MCUs"
 Comment2 ""
-Comment3 ""
+Comment3 "Michal Potrzebicz <michal@elevendroids.com>"
 Comment4 "License: CC BY-SA 4.0"
 $EndDescr
 $Comp
@@ -603,7 +603,7 @@ U 1 1 5F338F0A
 P 1650 6650
 F 0 "Y2" V 1604 6794 50  0000 L CNN
 F 1 "8MHz" V 1695 6794 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 1650 6650 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm" H 1650 6650 50  0001 C CNN
 F 3 "~" H 1650 6650 50  0001 C CNN
 	1    1650 6650
 	0    1    1    0   
@@ -743,7 +743,7 @@ L Switch:SW_Push SW1
 U 1 1 5F35A119
 P 4200 6950
 F 0 "SW1" V 4246 6902 50  0000 R CNN
-F 1 "SW_Push" V 4155 6902 50  0000 R CNN
+F 1 "Reset" V 4155 6902 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 4200 7150 50  0001 C CNN
 F 3 "~" H 4200 7150 50  0001 C CNN
 	1    4200 6950
@@ -894,8 +894,6 @@ Wire Wire Line
 Wire Wire Line
 	8000 2750 8250 2750
 Wire Wire Line
-	8000 2850 8250 2850
-Wire Wire Line
 	8000 2950 8250 2950
 Text Label 8050 1750 0    50   ~ 0
 PA01
@@ -979,8 +977,10 @@ Wire Wire Line
 	10150 1450 10150 1550
 Wire Wire Line
 	10150 1550 10250 1550
-Text Label 10000 1650 0    50   ~ 0
+Text Label 8050 2850 0    50   ~ 0
 PA14
+Wire Wire Line
+	10250 1750 10000 1750
 Wire Wire Line
 	10250 1850 10000 1850
 Wire Wire Line
@@ -1000,30 +1000,28 @@ Wire Wire Line
 Wire Wire Line
 	10250 2650 10000 2650
 Wire Wire Line
-	10250 2750 10000 2750
-Wire Wire Line
 	10250 2850 9750 2850
-Text Label 10000 1750 0    50   ~ 0
+Text Label 10000 1650 0    50   ~ 0
 PA15
-Text Label 10000 1850 0    50   ~ 0
+Text Label 10000 1750 0    50   ~ 0
 PA16
-Text Label 10000 1950 0    50   ~ 0
+Text Label 10000 1850 0    50   ~ 0
 PA17
-Text Label 10000 2050 0    50   ~ 0
+Text Label 10000 1950 0    50   ~ 0
 PA18
-Text Label 10000 2150 0    50   ~ 0
+Text Label 10000 2050 0    50   ~ 0
 PA19
-Text Label 10000 2250 0    50   ~ 0
+Text Label 10000 2150 0    50   ~ 0
 PA22
-Text Label 10000 2350 0    50   ~ 0
+Text Label 10000 2250 0    50   ~ 0
 PA23
-Text Label 10000 2450 0    50   ~ 0
+Text Label 10000 2350 0    50   ~ 0
 PA24
-Text Label 10000 2550 0    50   ~ 0
+Text Label 10000 2450 0    50   ~ 0
 PA25
-Text Label 10000 2650 0    50   ~ 0
+Text Label 10000 2550 0    50   ~ 0
 PA27
-Text Label 10000 2750 0    50   ~ 0
+Text Label 10000 2650 0    50   ~ 0
 PA28
 Text Label 9750 2850 0    50   ~ 0
 PA30_SWCLK
@@ -1070,36 +1068,36 @@ PA01_XOUT32
 $Comp
 L Device:R_Small R14
 U 1 1 5F4BEA18
+P 8400 2850
+F 0 "R14" V 8204 2850 50  0000 C CNN
+F 1 "0R" V 8295 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 2850 50  0001 C CNN
+F 3 "~" H 8400 2850 50  0001 C CNN
+	1    8400 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 5F4BF05C
 P 9850 1650
-F 0 "R14" V 9654 1650 50  0000 C CNN
-F 1 "0R" V 9745 1650 50  0000 C CNN
+F 0 "R15" V 10046 1650 50  0000 C CNN
+F 1 "0R" V 9955 1650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9850 1650 50  0001 C CNN
 F 3 "~" H 9850 1650 50  0001 C CNN
 	1    9850 1650
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R15
-U 1 1 5F4BF05C
-P 9850 1750
-F 0 "R15" V 10046 1750 50  0000 C CNN
-F 1 "0R" V 9955 1750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9850 1750 50  0001 C CNN
-F 3 "~" H 9850 1750 50  0001 C CNN
-	1    9850 1750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9950 1750 10250 1750
 Wire Wire Line
 	9950 1650 10250 1650
 Wire Wire Line
-	9750 1650 9300 1650
+	8300 2850 8000 2850
 Wire Wire Line
-	9750 1750 9300 1750
-Text Label 9300 1650 0    50   ~ 0
+	8500 2850 9050 2850
+Wire Wire Line
+	9750 1650 9300 1650
+Text Label 9050 2850 2    50   ~ 0
 PA14_XIN
-Text Label 9300 1750 0    50   ~ 0
+Text Label 9300 1650 0    50   ~ 0
 PA15_XOUT
 Wire Notes Line
 	10750 1000 10750 3500
@@ -1224,6 +1222,8 @@ F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_B
 	1    8550 5050
 	1    0    0    -1  
 $EndComp
-Text Label 8050 2850 0    50   ~ 0
+Wire Wire Line
+	10250 2750 10000 2750
+Text Label 10000 2750 0    50   ~ 0
 ~RESET
 $EndSCHEMATC
