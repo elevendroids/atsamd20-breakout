@@ -1,6 +1,6 @@
 # ATSAMD2x (SAM D2x) Breakout Board (Rev. A)
 
-Small MCU board designed for the [SAM D20](http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D20_%20Family_Datasheet_DS60001504C.pdf) and [SAM D21](http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_DataSheet_DS40001882F.pdf) ARM Cortex-M0+ microcontrollers from Microchip
+Small breakout board designed for the [SAM D20](http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D20_%20Family_Datasheet_DS60001504C.pdf) and [SAM D21](http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_DataSheet_DS40001882F.pdf) ARM Cortex-M0+ microcontrollers from Microchip
 
 ## Features
 
@@ -13,6 +13,8 @@ Small MCU board designed for the [SAM D20](http://ww1.microchip.com/downloads/en
 Designed in KiCad 5.1.6
 
 ![PCB Render](docs/atsamd20-breakout.png)
+
+![Prototype](docs/atsamd20-breakout-pcb.jpg)
 
 Schematic: [PDF](docs/atsamd20-breakout.pdf)
 
